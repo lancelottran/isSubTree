@@ -1,5 +1,17 @@
 /**
-
+We have to watch out for two tree having same traversial but have different structure
+For example:
+    1
+   /
+  2
+  
+ and
+ 
+    1
+     \
+      2
+      
+But we can counter it by placing a null value for example (2,x,1) and (x,2,1)
 **/
 
 boolean isSubtree(Tree<Integer> t1, Tree<Integer> t2) {
